@@ -1,0 +1,5 @@
+Alien-libpcre-*
+/.build/
+*.swp
+
+
