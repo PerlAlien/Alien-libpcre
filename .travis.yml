@@ -43,7 +43,7 @@ jobs:
     - env: CIP_TAG=5.8 CIP_ENV=ALIEN_INSTALL_TYPE=system
 branches:
   only:
-    - master
+    - main
 cache:
   directories:
     - "$HOME/.cip"
