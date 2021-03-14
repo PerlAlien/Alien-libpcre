@@ -1,4 +1,4 @@
-# Alien::libpcre [![Build Status](https://travis-ci.org/PerlAlien/Alien-libpcre.svg)](http://travis-ci.org/PerlAlien/Alien-libpcre)
+# Alien::libpcre ![linux](https://github.com/PerlAlien/Alien-libpcre/workflows/linux/badge.svg)
 
 Find or download and install libpcre (The "Perl Compatible" Regular Expressions library)
 
