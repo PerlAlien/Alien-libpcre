@@ -51,7 +51,13 @@ my $ffi = FFI::Platypus->new(
 
 # DESCRIPTION
 
-This distribution provides pcre so that it can be used by other
+**Note** that this [Alien](https://metacpan.org/pod/Alien) is for PCRE1, the deprecated older version of the
+Perl (in)Compatible Regular Expression (PCRE) library.  It exists for projects
+that require the older version of PCRE.  Currently the author uses it for
+source builds of [Alien::libnewrelic](https://metacpan.org/pod/Alien::libnewrelic) and [NewFangle](https://metacpan.org/pod/NewFangle).  If you need the
+newer currently supported version of PCRE see [Alien::PCRE2](https://metacpan.org/pod/Alien::PCRE2).
+
+This distribution provides PCRE1 so that it can be used by other
 Perl distributions that are on CPAN.  It does this by first trying to
 detect an existing install of pcre on your system.  If found it
 will use that.  If it cannot be found, the source code will be downloaded
