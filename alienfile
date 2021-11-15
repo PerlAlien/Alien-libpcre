@@ -1,13 +1,16 @@
 use alienfile;
 plugin 'PkgConfig' => 'libpcre';
 share {
-  plugin Download => (
-    url => 'https://ftp.pcre.org/pub/pcre/',
-    filter => qr/pcre-.*\.tar\.gz$/,
-    version => qr/([0-9\.]+)/,
+  plugin 'Download::GitHub' => (
+    github_user => 'PhilipHazel',
+    github_repo => 'pcre2',
+    version => qr/pcre2-([0-9\.]+)/,
   );
-  plugin Extract => 'tar.gz';
   plugin 'Build::Autoconf';
+  build [
+    'sh autogen.sh',
+    '%{configure} --disable-shared',
+    '%{make}',
+    '%{make} install',
+  ];
 };
-
-
