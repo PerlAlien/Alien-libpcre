@@ -72,6 +72,10 @@ for the use of other modules.
 
 The pcre, is not, as the name might suggest, actually compatible with modern Perl regular expressions.
 
+On Debian based systems (including Ubuntu), the development package for PCRE1 is `libpcre3-dev`, which
+is quite confusing, but I am sure there was a good reason for it.  If you want to do a `system` install
+use that package not the confusingly newer `libpcre2-dev`.
+
 # AUTHOR
 
 Graham Ollis <plicease@cpan.org>
