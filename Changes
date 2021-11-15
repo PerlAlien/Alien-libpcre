@@ -1,6 +1,8 @@
 Revision history for {{$dist->name}}},
 
 {{$NEXT}}
+
+0.02      2021-11-15 08:45:21 -0700
   - Use hard coded full path to tarball, as PCRE1 has been
     EOLd and there is unlikely to be another new version,
     now fetching from (unofficial) sourceforce mirror as the
