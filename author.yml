@@ -7,7 +7,7 @@ pod_spelling_system:
   # intentionally
   stopwords:
     - libpcre
-    - pcre
+    - PCRE
 
 pod_coverage:
   skip: 0
