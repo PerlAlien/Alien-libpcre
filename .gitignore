@@ -2,4 +2,7 @@ Alien-libpcre-*
 /.build/
 *.swp
 
-
+/Alien-libpcre-*
+/.build
+*.old
+*.orig
